@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 13/12</title>
+    <script src="https://kit.fontawesome.com/b0b122ec1b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="./src/css/estilos.css">
+
+</head>
+
+<body>
+    <section class="cartao--externo"> </section>
+    <script src="https://kit.fontawesome.com/b0b122ec1b.js" crossorigin="anonymous"></script>
+    <section class="cartao">
+        <h2 class="cartao__titulo">Give feedback</h2>
+        <p class="cartao__descricao">What do you think of the issue search experience<br> within Jira projects?</p>
+        <section class="secao-carinhas">
+            <label for="Terrible">
+                <input type="radio" id="Terrible" name="opc" class="opcoes__hidden">
+                <div class="container">
+                    <i class="fa-regular fa-face-sad-tear carinha"></i>
+                    <p> Terrible</p>
+                </div>
+            </label>
+
+            <label for="Bad">
+                <input type="radio" id="Bad" name="opc" class="opcoes__hidden">
+                <div class="container">
+                    <i class="fa-regular fa-face-frown carinha"></i>
+                    <p> Bad</p>
+                </div>
+            </label>
+
+            <label for="Neutral">
+                <input type="radio" id="Neutral" name="opc" class="opcoes__hidden">
+                <div class="container">
+
+                    <i class="fa-regular fa-face-meh carinha"></i>
+                    <p> Neutral</p>
+                </div>
+            </label>
+            <label for="Good">
+                <input type="radio" id="Good" name="opc" class="opcoes__hidden">
+                <div class="container">
+                    <i class="fa-regular fa-face-smile carinha"></i>
+
+                    <p> Good</p>
+                </div>
+            </label>
+            <label for="Amazing">
+                <input type="radio" id="Amazing" name="opc" class="opcoes__hidden">
+                <div class="container">
+                    <i class="fa-regular fa-face-laugh carinha"></i>
+                    <p> Amazing</p>
+                </div>
+            </label>
+        </section>
+        <section class="cartao__escrita">
+            <p class="cartao__pergunta">What are the main reasons for your rating?</p>
+            <textarea name="" id="" cols="70" rows="3" class="cartao__textarea"></textarea>
+        </section>
+        <section class="cartao__checkbox">
+
+
+            <div class="cartao__contato">
+
+                <label class="cartao__container"><span class="cartao__texto">I may be contacted about this feedback.
+                        <a class="cartao__texto--rosa" href="http://google.com"> Privacy Policy.</a></span>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+            <div class="cartao__contato">
+
+                <label class="cartao__container"><span class="cartao__texto">I'd like to help improve by joining the
+                        <a class="cartao__texto--rosa" href="http://google.com">Reasearch Group</a></span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+        </section>
+        <div class="cartao__botoes">
+            <button class="cartao__botao botao--submit">Submit</button>
+            <button class="cartao__botao botao--cancelar">Cancel</button>
+        </div>
+        
+    </section>
+</body>
+
+</html>
