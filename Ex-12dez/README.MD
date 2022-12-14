@@ -8,6 +8,15 @@ Link para o formulário de feedback: https://www.icodethis.com/images/projects/u
 
 
 ## Resultado:
-[x] Descobrir as cores corretas;
-[x] Necessita descobrir fontes melhores;
-[x] Necessita de ajustes;
+- [x] Descobrir as cores corretas;
+- [x] Necessita descobrir fontes melhores;
+- [x] Necessita de ajustes;
+
+
+## git push:
+
+```powershell
+git add .
+git commit -m "Ex-12dez"
+git push
+```
