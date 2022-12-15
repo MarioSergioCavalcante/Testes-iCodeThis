@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;500;600&display=swap");
+
+body {
+  background: #f7faff;
+  font-family: "Open Sans";
+  color: #121212;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartao {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.cartao__top {
+  background: linear-gradient(#6c89d7, #4e70db);
+  height: 150px;
+  clip-path: polygon(0% 0%, 250% 0%, 35% 100%, 0% 100%);
+  border-bottom-left-radius: 42px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cartao__avatar {
+  width: 64px;
+  border: 8px solid #7792d9;
+  border-radius: 99px;
+  margin: 22px 12px;
+  transition: 0.3s ease;
+}
+
+.cartao__nome {
+  font-size: 18px;
+  margin: 0px;
+  color: #FFFFFF;
+}
+.cartao__profissao {
+  color: #b4ccff;
+  font-size: 11px;
+  margin:0px;
+}
+
+.menu__botao{
+  align-self: center;
+  margin-top: 25px;
+  width:110px;
+  height:32px;
+  color: #FFF;
+  background-color: #628cff;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 3px 8px 10px 0px #628cff;
+cursor: pointer;
+}
+
+.menu__opcoes{
+
+    display:grid;
+   grid-template-columns: auto;
+    gap:20px;
+    padding: 10px;
+    margin-top:20px;
+    margin-left: -10px;
+}
+.menu__opcoes--conteudo{
+   display:grid;
+   grid-template-columns: 80px auto;
+   gap: 15px;
+    cursor: pointer;
+    align-items: center;
+    height: 45px;
+
+}
+
+.menu__link--texto{
+    text-decoration: none;
+    
+    font-size: 18px;
+
+}
+
+.menu__opcoes--conteudo i{
+    padding:10px;
+    margin-left:40px;
+  }
+
+.menu__opcoes--ativo{
+    color: #2175f2;
+
+    border-left: 4px solid #2175f2; 
+    
+}
+.menu__opcoes--ativo i{
+   margin-left: 35px;
+    
+}
+.menu__opcoes--ativo .menu__link--texto{
+    margin-left: -5px;
+}
+
+.close-btn {
+    width: 22px;
+    opacity: 0.3;
+    position: relative;
+    margin-right: 28px;
+    margin-top: -12px;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+    align-self: flex-end;
+  }
+  .close-btn:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+  .close-btn:active {
+    transform: scale(0.7);
+  }
