@@ -1,0 +1,6 @@
+
+
+
+function Teste(){
+    alert("Teste")
+}
