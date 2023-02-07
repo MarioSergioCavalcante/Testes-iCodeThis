@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeThis - Music</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="cartao">
+      <header class="cartao-cabecalho">
+        <span id="menu--sanduba" class="material-icons"> menu </span>
+        <h3 class="cartao__titulo" data-titulo>Playing now</h3>
+        <span class="material-icons" data-add> library_add </span>
+      </header>
+      <div class="info-album">
+        <div class="titulo-album">
+          <h3 class="titulo-album__nome" data-title>Teste</h3>
+          <h4 class="titulo-album__artista" data-artist>Nome</h4>
+
+        </div>
+        <img src="" alt="Álbum Cover" class="cartao-img" data-cover />
+      </div>
+      <div class="tracker">
+        <input
+          type="range"
+          name="tempo--musica"
+          id="tempo--musica"
+          class="tempo--musica"
+          data-rangeMusica
+        />
+        <div class="tempos">
+          <span class="tempo" data-tempoAtual>0:00</span>
+          <span class="tempo" data-tempoFinal>0:00</span>
+        
+        </div>
+      </div>
+      <div class="menu">
+        <span class="material-icons rotate" id="replay" data-repeat>
+          replay
+        </span>
+        <span class="material-icons" data-prev> skip_previous </span>
+        <span class="material-icons x2" id="play" data-play>
+          play_circle_outline
+        </span>
+        <!--    <span class="material-icons">
+            pause_circle_outline
+            </span> -->
+        <span class="material-icons" data-next> skip_next </span>
+        <span class="material-icons"> shuffle </span>
+      </div>
+      <div class="songList">
+        <ul class="songList--list" data-list></ul>
+      </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

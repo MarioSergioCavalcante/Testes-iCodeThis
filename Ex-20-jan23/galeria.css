@@ -1,0 +1,8 @@
+.container__fotos{
+    column-count: 3;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}

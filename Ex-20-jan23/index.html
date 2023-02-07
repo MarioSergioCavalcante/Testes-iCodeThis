@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeThis 20/01</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/b0b122ec1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://st3.depositphotos.com/11318046/17077/i/600/depositphotos_170770520-stock-photo-beautiful-young-black-woman-lying.jpg"
+          alt=""
+          class="container__avatar"
+        />
+        <div class="container__info">
+          <div class="container__perfil">
+            <p class="container__perfil__nome">Joan Doe</p>
+            <p class="container__perfil__profissao">- Photography</p>
+            <p class="container__perfil__local">
+              <i class="fa-sharp fa-solid fa-location-dot"></i>
+
+              Timisoara, RO
+            </p>
+          </div>
+        </div>
+        <div class="container__relevantes">
+          <div class="container__relevantes--item">
+            <i class="fa-solid fa-image gray"></i>
+            <p class="container__relevantes--valor">127</p>
+          </div>
+          <div class="container__relevantes--item">
+            <i class="fa-regular fa-heart gray"></i>
+            <p class="container__relevantes--valor">354</p>
+          </div>
+          <div class="container__relevantes--item">
+            <i class="fa-regular fa-user gray"></i>
+            <p class="container__relevantes--valor">470</p>
+          </div>
+        </div>
+        <div class="container__botao__follow">
+          <a class="container__botao__follow--btn"
+            onclick="measure()"><i class="fa-solid fa-user-plus"></i> Follow</a
+          >
+        </div>
+      </div>
+
+      <section class="descricao">
+        <div class="descricao__aboutme">
+          <h1 class="descricao__titulo">About me</h1>
+          <p class="descricao__texto">
+            Dolor sit amet, utamur efficiantur ius cu, ludus eligendi adipisci
+            ex usu, per ne putent regione philosophia. Saperet civibus
+            quaerendum usu ex, ut alii habeo utroque qui.
+          </p>
+          <p class="descricao__texto">
+            Et inermis quaestio elaboraret pro. Habeo corrumpit assueverit per
+            at. Justo quando ad has, solet definitiones ad mel.
+          </p>
+        </div>
+        <div class="descricao__skills">
+          <h1 class="descricao__titulo centro">Skills</h1>
+          <div class="descricao__skills--item">
+            <p class="descricao__skills--item__titulo">Equipment</p>
+            <input
+              disabled
+              type="range"
+              min="0"
+              max="100"
+              value="90"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+          <div class="descricao__skills--item">
+            <p class="descricao__skills--item__titulo">Editing</p>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="70"
+              class="slider"
+              id="myRange"
+              disabled
+            />
+          </div>
+          <div class="descricao__skills--item">
+            <p class="descricao__skills--item__titulo">Marketing</p>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="40"
+              class="slider"
+              id="myRange"
+              disabled
+            />
+          </div>
+          <div class="descricao__skills--item">
+            <p class="descricao__skills--item__titulo">Retouching</p>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="95"
+              class="slider"
+              id="myRange"
+              disabled
+            />
+          </div>
+        </div>
+      </section>
+      <div class="container__galeria">
+        <h1 class="container__galeria__titulo">Pictures</h1>
+        <div class="container__fotos">
+          <div>  <img src="https://images.unsplash.com/photo-1514897575457-c4db467cf78e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1vb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+           
+        </div>
+       <div> <img src="https://images.unsplash.com/photo-1596998628927-4a8199d0d11b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1vb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+        </div>
+        <div> <img src="https://images.unsplash.com/photo-1535332371349-a5d229f49cb5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1vb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+        </div>
+
+        <div>
+             <img src="https://images.unsplash.com/photo-1511553677255-ba939e5537e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG1vb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+        </div>
+
+    </div>
+      
+    </div>
+  
+  </body>
+  <script type="text/javascript">
+    //function to meansure the ping of the server
+    function measure() {
+      var start = new Date().getTime();
+      var http = new XMLHttpRequest();
+     
+      
+
+
+      http.open("GET", "192.168.0.1:8080", false);
+      http.send();
+      var end = new Date().getTime();
+      var time = end - start;
+      alert("Ping: " + time + "ms");
+    }
+
+  </script>
+</html>
